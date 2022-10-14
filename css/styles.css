@@ -1,3 +1,11 @@
+:root {
+    --main-color: #2196F3;
+    --primary-color: #ffffff;
+    --secondary-color: #757575;
+    --tertiary-color: #000000;
+    --add-font: 'Raleway'
+
+}
 body {
     font-family: 'Roboto', 'sans-serif';
     font-size: 14px;
@@ -13,60 +21,70 @@ body {
 }
 .link{
     text-decoration: none;
-    color: black;
+    color: var(--tertiary-color);
 }
 .link:hover, 
 .link:focus{
-    color: #2196F3;
+    color: var(--main-color);
 }
 .blue{
-    color: #2196F3;
+    color: var(--main-color);;
 }
-.logo-top {
-    font-family: 'Raleway';
+.logo {
+    font-family: var(--add-font);
     font-size: 26px;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+
+.logo-top {
+    color: var(--tertiary-color);
+    align-items: baseline;
+
+}
+
 .logo-top:hover,
 .logo-top:focus,
 .logo-top:visited {
-    color:black;
+    color: var(--tertiary-color);
 }
+
 .logo-footer {
-    font-family: 'Raleway';
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #ffffff;
+    color: var(--primary-color);
+}
+
+.contact-header {
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
 }
 
 .logo-footer:hover,
 .logo-footer:focus,
 .logo-footer:visited {
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 .slider-text{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.26em;
-    color: #ffffff;
+    color: var(--primary-color);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     background-color: #2F303A;;
 }
 .button-fp{
-    border-color: #2196F3;
-    background-color: #2196F3;
+    border-color: var(--main-color);;
+    background-color: var(--main-color);;
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
     font-weight: 700;
     font-size: 16px;
-    color: #ffffff;
+    color: var(--primary-color);
     line-height: 1.87em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -97,12 +115,12 @@ body {
     font-size: 16px;
     line-height: 1.18em;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-color);
 }
 .address{
     line-height: 1.71em;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--primary-color);
     font-style: normal;
 }
 .footer{
@@ -126,8 +144,8 @@ body {
 }
 .filter:hover,
 .filter:focus{
-    background-color: #2196F3;
-    color: #ffffff;
+    background-color: var(--main-color);;
+    color: var(--primary-color);
 }
 
 .project-title{
@@ -144,5 +162,5 @@ body {
     font-size: 16px;
     line-height: 1.87em;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-color);
 }
